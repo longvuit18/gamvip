@@ -1002,7 +1002,7 @@ webpackJsonp([5, 11], {
                                         return window.Config && window.Config.Games ? (this.map = window.Config.Games,
                                             [3, 4]) : [3, 1];
                                     case 1:
-                                        return [4, fetch("/config/games.json")];
+                                        return [4, fetch(window.location.origin + "/" + window.appName + "/config/games.json")];
                                     case 2:
                                         return t = n.sent(),
                                             e = this,
@@ -1411,7 +1411,7 @@ webpackJsonp([5, 11], {
                                                 window.Config && window.Config.Games ? (t = window.Config.Games,
                                                     [3, 4]) : [3, 1];
                                         case 1:
-                                            return [4, fetch("/config/games.json")];
+                                            return [4, fetch(window.location.origin + "/" + window.appName + "/config/games.json")];
                                         case 2:
                                             return [4, o.sent().json()];
                                         case 3:
@@ -1921,7 +1921,7 @@ webpackJsonp([5, 11], {
                                 switch (n.label) {
                                     case 0:
                                         return n.trys.push([0, 2, , 3]),
-                                            [4, Object(a.c)("/config/banner.json")];
+                                            [4, Object(a.c)(window.location.origin + "/" + window.appName + "/config/banner.json")];
                                     case 1:
                                         return t = n.sent(),
                                             this.setState({
